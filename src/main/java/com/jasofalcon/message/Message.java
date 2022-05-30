@@ -10,6 +10,7 @@ import java.io.Serializable;
 public class Message implements Serializable{
 
     private User user;
+    private Roomid roomid;
     private MessageType type;
     private String data;
 
@@ -27,6 +28,14 @@ public class Message implements Serializable{
 
     public void setUser(User user) {
         this.user = user;
+    }
+    
+    public User getRoomid() {
+        return roomid;
+    }
+
+    public void setRoomid(Roomid roomid) {
+        this.roomid = roomid;
     }
 
     public void setData(String data) {

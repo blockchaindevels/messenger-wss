@@ -14,6 +14,7 @@ public class User implements Serializable {
 
     public User(String name) {
         this.name = name;
+        this.roomid = roomid;
         id = UUID.randomUUID().toString();
     }
 
@@ -24,12 +25,8 @@ public class User implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-    
-    public User(String roomid) {
-        this.roomid = roomid;
-    }
 
-    public String geRoomid() {
+    public String getRoomid() {
         return this.roomid;
     }
 

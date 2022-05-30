@@ -7,12 +7,11 @@ import java.util.UUID;
 public class User implements Serializable {
     private String id;
     private String name;
-    private String roomid;
 
     public User() {
     }
 
-    public User(String name, String roomid) {
+    public User(String name) {
         this.name = name;
         this.roomid = roomid;
         id = UUID.randomUUID().toString();
@@ -24,13 +23,6 @@ public class User implements Serializable {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getRoomid() {
-        return this.roomid;
-    }
-
-    public void setRoomid(String roomid) {
         this.roomid = roomid;
     }
 

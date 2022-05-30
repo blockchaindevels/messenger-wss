@@ -7,6 +7,7 @@ import java.util.UUID;
 public class User implements Serializable {
     private String id;
     private String name;
+    private String roomid;
 
     public User() {
     }

@@ -7,6 +7,7 @@ import java.util.UUID;
 public class User implements Serializable {
     private String id;
     private String name;
+    private String roomid;
 
     public User() {
     }
@@ -22,6 +23,18 @@ public class User implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public User(String roomid) {
+        this.roomid = roomid;
+    }
+
+    public String geRoomid() {
+        return this.roomid;
+    }
+
+    public void setRoomid(String roomid) {
+        this.roomid = roomid;
     }
 
     public String getId() {

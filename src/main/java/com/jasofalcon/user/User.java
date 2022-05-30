@@ -12,7 +12,7 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(String name) {
+    public User(String name, roomid) {
         this.name = name;
         this.roomid = roomid;
         id = UUID.randomUUID().toString();

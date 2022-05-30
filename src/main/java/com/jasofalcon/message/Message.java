@@ -28,14 +28,6 @@ public class Message implements Serializable{
     public void setUser(User user) {
         this.user = user;
     }
-    
-    public User getRoomid() {
-        return roomid;
-    }
-
-    public void setRoomid(User roomid) {
-        this.roomid = roomid;
-    }
 
     public void setData(String data) {
         this.data = data;

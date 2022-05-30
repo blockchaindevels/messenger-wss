@@ -71,7 +71,7 @@ public class ChatServer extends WebSocketServer {
                     broadcastMessage(msg);
             }
 
-            System.out.println("Message from user: " + msg.getUser() + "to user: "+msg.roomid(), text: " + msg.getData() + ", type:" + msg.getType());
+            System.out.println("Message from user: " + msg.getUser(), "to user: " + msg.roomid(), text: " + msg.getData() + ", type:" + msg.getType());
             logger.info("Message from user: " + msg.getUser() + ", text: " + msg.getData());
         } catch (IOException e) {
             logger.error("Wrong message format.");

@@ -12,6 +12,7 @@ public class Message implements Serializable{
     private User user;
     private MessageType type;
     private String data;
+    private String roomid;
 
     public MessageType getType() {
         return type;
@@ -35,5 +36,13 @@ public class Message implements Serializable{
 
     public String getData(){
         return data;
+    }
+    
+    public void setRoomid(String roomid) {
+        this.roomid = roomid;
+    }
+
+    public String getRoomid(){
+        return roomid;
     }
 }
